@@ -7,4 +7,8 @@ class MyApp < Sinatra::Base
     erb :index  
   end
 
+  get "/animals" do
+    erb :animals
+  end
+
 end

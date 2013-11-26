@@ -5,17 +5,16 @@ The time is currently <%= Time.now %>
   <p>It's Homework Time!</p>
   <p>Is Yours Done?</p>
 </h2>
-<!-- In the form tag, the action attribute defines what url (or path) this form submits to. We're leaving it blank because we want to submit to the same url as the current page. -->
-<form action="" method="get" accept-charset="utf-8">
+<form action="/" method="get" accept-charset="utf-8">
   <label for="fname">Name</label>
   <input type="text" name="first_name" value="" id="fname">
   <input type="text" name="last_name" value="" id="lname">
 
-  <p><input type="submit" value="Submit"></p>
+  <p><input type="submit" value="Submit &rarr;"></p>
 </form>
 
 <div id='debug'>
   <hr>
   <h4>DEBUG</h4>
-  The params hash: <%= params %><br>
+  The params hash: <%= params %>
 </div>

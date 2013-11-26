@@ -1,0 +1,60 @@
+<!-- Basic required HTML elements views/basic.erb -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://raw.github.com/Ada-Developers-Academy/daily-curriculum/master/week5/monday/personal-website/css/main.css" media="all" rel="stylesheet">
+    <title>Jaime Lyn Schatz</title>
+  </head>
+  <body>
+    <div class='header'>
+      <div class='container'>
+        <span class='brand'>Jaime Lyn Schatz</span>
+        <div class='nav'>
+          <ul class='nav-links'>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li class='dropdown-link'>
+              <a href="#cats">Cats</a>
+              <ul class='dropdown'>
+                <li>Sea Urchin</li>
+                <li>Sea Urchin Jr.</li>
+                <li>Siberian Husky</li>
+                <li>Godzilla</li>
+              </ul>
+            </li>
+          </il>
+        </div>
+      </div>
+    </div>
+
+    <div role="main" class='container'>
+      <div>
+        <div class='main'>
+          <h2>Something about me</h2>
+          <p>
+            I don't really like HTML very much.
+          </p>
+          <p>
+            It's sort of like not liking art projects in school - can't I just write an essay?
+          </p>
+        </div>
+        <div class='main'>
+          <img src="http://placekitten.com/g/440/350"></img>
+          <blockquote>Apparently there is nothing that cannot happen today.</blockquote>
+          <span class='author'> - Mark Twain</span>
+        </div>
+      </div>
+
+      <div class='footer'>
+        <hr>
+        <input type='text' placeholder="Email Address" />
+        <label for="send_me_lots_of_pics_of_kitties">
+          <input type="checkbox" name="send_me_lots_of_pics_of_kitties">
+          <small class="muted">Send me lots of pics of kitties</small>
+          <input type="submit" name="submit" value="submit" id="submit">
+        </label>
+
+      </div>
+    </div>
+  </body>
+</html>

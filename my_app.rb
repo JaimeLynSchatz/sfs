@@ -11,4 +11,8 @@ class MyApp < Sinatra::Base
     erb :animals
   end
 
+  get "/basic" do
+    erb :basic
+  end
+  
 end

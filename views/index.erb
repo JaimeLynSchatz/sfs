@@ -1,7 +1,7 @@
 <!-- index.erb -->
 <% if params.length > 0 %>
   <h3>
-    Thanks for signing up for our newsletter, <%= params %>!
+    Thanks for signing up for our newsletter, <%= params["person"]["first_name"] %> <%= params["person"]["last_name"] %>!
   </h3>
 <% else %>
   <h3></h3>

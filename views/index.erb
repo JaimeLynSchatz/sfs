@@ -3,13 +3,13 @@
   <link rel="stylesheet" type="css/text" href="/css/main.css" />
 </head>
 <body>
-  <% if params.length > 0 %>
-    <h3>
+  <% if params.length > 0 and params["done?"] == "on" %>
+    <h1>
       Way to go! Go ahead and play - just get some sleep tonight!! :D
-    </h3>
-  <% else %>
-    <h3>
-      Sorry, Bub. Hit the books!</h3>
+    </h1>
+  <% elsif params["not_done?"] == "on" %>
+    <h1>
+      Sorry, Bub. Hit the books!</h1>
   <% end %>
 
 
@@ -23,8 +23,8 @@
   <form action="" method="get" accept-charset="utf-8">
     
     <label for="fname">I'm Done!</label>
-    <input type="radio" name="person[first_name]" value="" id="fname">Yes</input>
-    <input type="radio" name="person[last_name]" value="" id="lname">No :(</input>
+    <input type="checkbox" name="done?" id="done?">Yes</input>
+    <input type="checkbox" name="not_done?" id="not_done?">No :(</input>
     
     <p><input type="submit" value="Submit"></p>
   </form>

@@ -1,0 +1,1 @@
+**sfs** is the first iteration of the Schatz Family Splash page, a basic home page.  Soon to come will be features that allow kids to text the web master when tasks are done or to add items to a shared list. 

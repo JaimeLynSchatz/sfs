@@ -5,10 +5,11 @@
 <body>
   <% if params.length > 0 %>
     <h3>
-      Thanks for signing up for our newsletter, <%= params["person"]["first_name"] %> <%= params["person"]["last_name"] %>!
+      Way to go! Go ahead and play - just get some sleep tonight!! :D
     </h3>
   <% else %>
-    <h3></h3>
+    <h3>
+      Sorry, Bub. Hit the books!</h3>
   <% end %>
 
 
@@ -20,10 +21,11 @@
   </h2>
   <!-- In the form tag, the action attribute defines what url (or path) this form submits to. We're leaving it blank because we want to submit to the same url as the current page. -->
   <form action="" method="get" accept-charset="utf-8">
-    <label for="fname">Name</label>
-    <input type="text" name="person[first_name]" value="" id="fname">
-    <input type="text" name="person[last_name]" value="" id="lname">
-
+    
+    <label for="fname">I'm Done!</label>
+    <input type="radio" name="person[first_name]" value="" id="fname">Yes</input>
+    <input type="radio" name="person[last_name]" value="" id="lname">No :(</input>
+    
     <p><input type="submit" value="Submit"></p>
   </form>
 </body>

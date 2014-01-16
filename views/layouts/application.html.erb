@@ -1,0 +1,15 @@
+<!--Still working on this part -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hi Guys! <%= yield(:title) %></title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

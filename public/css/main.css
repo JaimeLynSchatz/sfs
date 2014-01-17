@@ -133,17 +133,22 @@ div[role=main] {
 }
 
 /* Custom Stuff - it cascades, right? */
-.midday {
-  background-color: #000000,
-  color: #FFFFFF;
+body div.midday {
+  background-color: #CC99FF;
+  color: white;
 }
 
-.morning {
-  background-color: #FFFFFF,
-  color: #000000;
+body div.morning {
+  background-color: #FFFF80;
+  color: black;
 }
 
-.purple {
-  background-color: purple,
-  color: #FFFFFF;
+body div.bedtime {
+  background-color: #800000;
+  color: #000033;
+}
+
+body div.late {
+  background-color: #222222;
+  color: #999999;
 }

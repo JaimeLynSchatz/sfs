@@ -1,10 +1,11 @@
 <!-- index.erb -->
 <head>
-  <link rel="stylesheet" type="css/text" href="/css/bootstrap.css" />
-  <script src="/helpers.rb" />
+  <link rel="stylesheet" type="css/text" href="/css/main.css" />
 </head>
 <body>
-  <h2><%= time_of_day() %></h2>
+  <div class="<%= time_of_day() %>">
+  <h2><%= time_of_day() %> == purple?</h2>
+
   <% if params.length > 0 and params["done?"] == "on" %>
     <h1>
       Way to go! Go ahead and play - just get some sleep tonight!! :D
@@ -30,6 +31,7 @@
     
     <p><input type="submit" value="Submit"></p>
   </form>
+</div>
 </body>
 
   <div id='debug'>

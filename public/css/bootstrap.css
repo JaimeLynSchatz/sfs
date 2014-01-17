@@ -5778,3 +5778,20 @@ td.visible-print {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/* Custom Stuff - it cascades, right? */
+body.midday {
+  background-color: #000000,
+  color: #FFFFFF;
+}
+
+body.morning {
+  background-color: #FFFFFF,
+  color: #000000;
+}
+
+body.purple {
+  background-color: purple,
+  color: #FFFFFF;
+}
+/*here I am changing the file no more 304 */ 

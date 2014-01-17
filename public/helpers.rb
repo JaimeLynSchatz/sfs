@@ -5,10 +5,11 @@ module my_time
     if t.hour > 4 and t.hour < 10
       return "morning"
     elsif t.hour >= 10 and t.hour < 16
-      return "midday"
+      return "purple"
     elsif t.hour >= 16 and t.hour < 7
       return "bedtime"
     else
       return "late"
     end
   end
+end

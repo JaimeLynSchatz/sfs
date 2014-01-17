@@ -3,7 +3,7 @@ body {
   font-family: Helvetica, Arial;
   margin: 0;
   padding: 0;
-  background-color: #aaa;
+  background-color: #333333;
 }
 
 hr {
@@ -130,4 +130,20 @@ div[role=main] {
 .footer {
   clear: both;
   text-align: right;
+}
+
+/* Custom Stuff - it cascades, right? */
+.midday {
+  background-color: #000000,
+  color: #FFFFFF;
+}
+
+.morning {
+  background-color: #FFFFFF,
+  color: #000000;
+}
+
+.purple {
+  background-color: purple,
+  color: #FFFFFF;
 }

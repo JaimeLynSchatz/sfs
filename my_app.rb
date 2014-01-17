@@ -6,11 +6,11 @@ class MyApp < Sinatra::Base
 
   def time_of_day()
     t = Time.now
-    if t.hour > 4 and t.hour < 10
+    if t.hour >= 4 and t.hour < 10
       return "morning"
     elsif t.hour >= 10 and t.hour < 16
       return "midday"
-    elsif t.hour >= 16 and t.hour < 7
+    elsif t.hour >= 16 or t.hour < 4
       return "bedtime"
     else
       return "late"

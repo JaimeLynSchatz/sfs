@@ -1,8 +1,10 @@
 <!-- index.erb -->
 <head>
   <link rel="stylesheet" type="css/text" href="/css/bootstrap.css" />
+  <script src="/helpers.rb" />
 </head>
 <body>
+  <h2><%= time_of_day() %></h2>
   <% if params.length > 0 and params["done?"] == "on" %>
     <h1>
       Way to go! Go ahead and play - just get some sleep tonight!! :D

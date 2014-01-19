@@ -4,38 +4,51 @@
 </head>
 <body>
   <div class="<%= time_of_day() %>">
-  <h2><%= time_of_day() %> == purple?</h2>
-
-  <% if params.length > 0 and params["done?"] == "on" %>
-    <h1>
-      Way to go! Go ahead and play - just get some sleep tonight!! :D
-    </h1>
-  <% elsif params["not_done?"] == "on" %>
-    <h1>
-      Sorry, Bub. Hit the books!</h1>
-  <% end %>
-
-
-  <h1>Do You Know What Time It Is?</h1>
-  The time is currently <%= Time.now %>
-  <h2>
-    <p>It's Homework Time!</p>
-    <p>Is Yours Done?</p>
-  </h2>
-  <!-- In the form tag, the action attribute defines what url (or path) this form submits to. We're leaving it blank because we want to submit to the same url as the current page. -->
-  <form action="" method="get" accept-charset="utf-8">
     
-    <label for="fname">I'm Done!</label>
-    <input type="checkbox" name="done?" id="done?">Yes</input>
-    <input type="checkbox" name="not_done?" id="not_done?">No :(</input>
-    
-    <p><input type="submit" value="Submit"></p>
-  </form>
-</div>
+    <div class="testing">
+      <h2><%= time_of_day() %> == purple?</h2>
+    </div>
+
+    <div id="homework_response">   
+      <% if params.length > 0 and params["done?"] == "on" %>
+        <h1>
+          Way to go! Go ahead and play - just get some sleep tonight!! :D
+        </h1>
+      <% elsif params["not_done?"] == "on" %>
+        <h1>
+          Sorry, Bub. Hit the books!</h1>
+      <% end %>
+    </div>
+
+    <div class="main">
+      <h1>Do You Know What Time It Is?</h1>
+      The time is currently <%= Time.now %>
+      <h2>
+        <p>It's Homework Time!</p>
+        <p>Is Yours Done?</p>
+      </h2>
+    </div>
+
+    <div id="homework_question">
+    <!-- In the form tag, the action attribute defines what url (or path) this form submits to. We're leaving it blank because we want to submit to the same url as the current page. -->
+      <form action="" method="get" accept-charset="utf-8">
+        
+        <label for="fname">I'm Done!</label>
+        <input type="checkbox" name="done?" id="done?">Yes</input>
+        <input type="checkbox" name="not_done?" id="not_done?">No :(</input>
+        
+        <p><input type="submit" value="Submit"></p>
+      </form>
+    </div>
+
+  </div>
+
 </body>
 
-  <div id='debug'>
+<footer>
+  <div id='debug' class="testing">
     <hr>
     <h4>DEBUG</h4>
     The params hash: <%= params %><br>
   </div>
+<footer>

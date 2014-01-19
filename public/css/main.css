@@ -133,27 +133,45 @@ div[role=main] {
 }
 
 /* Custom Stuff - it cascades, right? */
-body div.midday {
-  background-color: #CC99FF;
+div {
+  border: 1px dotted black;
+  padding: 5px;
+  text-align: center;
+}
+
+body .midday {
+  background-color: #994499;
   color: white;
 }
 
-body div.morning {
+body .morning {
   background-color: #FFFF80;
   color: black;
 }
 
-body div.bedtime {
+body .bedtime {
   background-color: #800000;
   color: #000033;
 }
 
-body div.late {
+body .late {
   background-color: #222222;
   color: #999999;
 }
 
+.hide_this {
+  display: none;
+}
+
+}
+.testing {
+  display: none;
+}
+#debug {
+  font-size: small;
+  text-align: left;
+}
 /* 304 troll */
 .nothing_class {
-  
+
 }

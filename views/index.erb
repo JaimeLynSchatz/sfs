@@ -1,6 +1,6 @@
 <!-- index.erb -->
 <head>
-  <link type="text/css" rel="stylesheet" href="/css/main2.css" />
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
   <div class="<%= time_of_day() %>">
@@ -9,7 +9,7 @@
       <h2><%= time_of_day() %> == purple?</h2>
     </div>
 
-    <div id="homework_response">   
+    <div id="homework_response" class=<%= if params.length <= 0 then "hide_this" end %> >   
       <% if params.length > 0 and params["done?"] == "on" %>
         <h1>
           Way to go! Go ahead and play - just get some sleep tonight!! :D
@@ -20,7 +20,7 @@
       <% end %>
     </div>
 
-    <div class="main">
+    <div class="regular_div">
       <h1>Do You Know What Time It Is?</h1>
       The time is currently <%= Time.now %>
       <h2>
@@ -33,7 +33,7 @@
     <!-- In the form tag, the action attribute defines what url (or path) this form submits to. We're leaving it blank because we want to submit to the same url as the current page. -->
       <form action="" method="get" accept-charset="utf-8">
         
-        <label for="fname">I'm Done!</label>
+        <label for="homework_done">I'm Done!</label>
         <input type="checkbox" name="done?" id="done?">Yes</input>
         <input type="checkbox" name="not_done?" id="not_done?">No :(</input>
         

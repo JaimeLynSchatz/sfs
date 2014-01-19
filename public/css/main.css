@@ -163,10 +163,10 @@ body .late {
   display: none;
 }
 
-}
-.testing {
+div .testing {
   display: none;
 }
+
 #debug {
   font-size: small;
   text-align: left;

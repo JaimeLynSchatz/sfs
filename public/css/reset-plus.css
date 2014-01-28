@@ -203,3 +203,57 @@ textarea:-moz-placeholder { color:#a9a9a9; }
   
     
 }
+
+/* Custom Stuff - it cascades, right? */
+div {
+  border: 1px dotted black;
+  padding: 5px;
+  text-align: center;
+}
+
+body .midday {
+  background-color: #994499;
+  color: white;
+}
+
+body .morning {
+  background-color: #FFFF80;
+  color: black;
+}
+
+body .bedtime {
+  background-color: #800000;
+  color: #000033;
+}
+
+body .late {
+  background-color: #222222;
+  color: #999999;
+}
+
+.hide_this {
+  display: none;
+}
+
+div .testing {
+  display: none;
+}
+
+article {
+  display: inline-block;
+  width: 69%;
+}
+
+aside {
+  display: inline-block;
+  width: 29%;
+}
+
+#debug {
+  font-size: small;
+  text-align: left;
+}
+/* 304 troll */
+.nothing_class {
+
+}

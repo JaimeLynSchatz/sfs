@@ -8,61 +8,61 @@
     <div class="testing">
       <h2><%= time_of_day() %> == purple?</h2>
     </div>
+    
+    <article>
+      <div id="homework_response" class=<%= if params.length <= 0 then "hide_this" end %> >   
+        <% if params.length > 0 and params["done?"] == "on" %>
+          <h1>
+            Way to go! Go ahead and play - just get some sleep tonight!! :D
+          </h1>
+        <% elsif params["not_done?"] == "on" %>
+          <h1>
+            Sorry, Bub. Hit the books!</h1>
+        <% end %>
+      </div>
 
-    <div id="homework_response" class=<%= if params.length <= 0 then "hide_this" end %> >   
-      <% if params.length > 0 and params["done?"] == "on" %>
-        <h1>
-          Way to go! Go ahead and play - just get some sleep tonight!! :D
-        </h1>
-      <% elsif params["not_done?"] == "on" %>
-        <h1>
-          Sorry, Bub. Hit the books!</h1>
-      <% end %>
-    </div>
+      <div class="regular_div">
+        <h1>Do You Know What Time It Is?</h1>
+        The time is currently <%= Time.now.to_time  %>
+        <h2>
+          <p>It's Homework Time!</p>
+          <p>Is Yours Done?</p>
+        </h2>
+      </div>
 
-    <div class="regular_div">
-      <h1>Do You Know What Time It Is?</h1>
-      The time is currently <%= Time.now.to_time  %>
-      <h2>
-        <p>It's Homework Time!</p>
-        <p>Is Yours Done?</p>
-      </h2>
-    </div>
+      <div id="homework_question">
+      <!-- In the form tag, the action attribute defines what url (or path) this form submits to. We're leaving it blank because we want to submit to the same url as the current page. -->
+        <form action="" method="get" accept-charset="utf-8">
+          <label for="homework_done">I'm Done!</label>
+          <input type="checkbox" name="done?" id="done?">Yes</input>
+          <input type="checkbox" name="not_done?" id="not_done?">No :(</input>
+          <p><input type="submit" value="Submit"></p>
+        </form>
+      </div>
 
-    <div id="homework_question">
-    <!-- In the form tag, the action attribute defines what url (or path) this form submits to. We're leaving it blank because we want to submit to the same url as the current page. -->
-      <form action="" method="get" accept-charset="utf-8">
-        
-        <label for="homework_done">I'm Done!</label>
-        <input type="checkbox" name="done?" id="done?">Yes</input>
-        <input type="checkbox" name="not_done?" id="not_done?">No :(</input>
+    </article>
 
-        <p><input type="submit" value="Submit"></p>
+    <aside>
+      <div>
+        <form action="MAILTO:jaimelynschatz@gmail.com" method="post" enctype="text/plain">
+          You Are:<br>
+          <input type="text" name="name" value="your name"><br>
+          <input type="text" name="mail" value="your email"><br>
+          Comments:<br>
+          <input type="text" name="comment" value="your comment" size="35"><br><br>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </form>
+      </div>
+    </aside>
 
-      </form>
+    <footer>
+      <div id='debug' class="testing">
+        <hr>
+        <h4>DEBUG</h4>
+        The params hash: <%= params %><br>
+      </div>
+    </footer>
 
-<!-- UNDER CONTRUCTION: DOES NOT WORK THE WAY I WANT YET
-      <form action="MAILTO:jaimelynschatz@gmail.com" method="post" enctype="text/plain">
-        You Are:<br>
-        <input type="text" name="name" value="your name"><br>
-        <input type="text" name="mail" value="your email"><br>
-        Comments:<br>
-        <input type="text" name="comment" value="your comment" size="50"><br><br>
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
-      </form>
--->
-
-    </div>
-
-  </div>
-
-</body>
-
-<footer>
-  <div id='debug' class="testing">
-    <hr>
-    <h4>DEBUG</h4>
-    The params hash: <%= params %><br>
-  </div>
-<footer>
+  </body>
+</html>

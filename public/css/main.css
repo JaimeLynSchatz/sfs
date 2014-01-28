@@ -167,6 +167,16 @@ div .testing {
   display: none;
 }
 
+article {
+  display: inline-block;
+  width: 69%;
+}
+
+aside {
+  display: inline-block;
+  width: 29%;
+}
+
 #debug {
   font-size: small;
   text-align: left;

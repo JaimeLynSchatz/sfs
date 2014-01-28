@@ -4,7 +4,7 @@ require 'date'
 
 class MyApp < Sinatra::Base
 
-  date = DateTime.parse("")
+  date = DateTime.new
   # This is where your code will go
   def time_of_day()
     t = Time.now

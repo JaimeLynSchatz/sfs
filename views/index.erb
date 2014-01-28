@@ -1,6 +1,6 @@
 <!-- index.erb -->
 <head>
-  <link type="text/css" rel="stylesheet" href="/css/reset-plus.css" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
 </head>
 <body>
   <div class="<%= time_of_day() %>">
@@ -9,7 +9,7 @@
       <h2><%= time_of_day() %> == purple?</h2>
     </div>
     
-    <article>
+    <article class="mainbody layout1_1">
       <div id="homework_response" class=<%= if params.length <= 0 then "hide_this" end %> >   
         <% if params.length > 0 and params["done?"] == "on" %>
           <h1>
@@ -42,7 +42,7 @@
 
     </article>
 
-    <aside>
+    <aside class="layout1_2">
       <div>
         <form action="MAILTO:jaimelynschatz@gmail.com" method="post" enctype="text/plain">
           You Are:<br>

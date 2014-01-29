@@ -27,7 +27,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/" do
-    erb :index  
+    erb :basic_index  
   end
 
   get "/animals" do

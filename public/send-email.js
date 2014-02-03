@@ -24,3 +24,5 @@ var params = {
         ]
     }
 };
+
+// where does params go? Need to check with original tutorial for this
